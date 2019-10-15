@@ -1,0 +1,792 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700);
+
+body {
+    margin: 0;
+}
+
+.color-primary {
+    color: #4a90e2
+}
+
+.color-link {
+    color: #4a90e2
+}
+
+.p-rel {
+    position: relative;
+}
+
+.p-abs {
+    position: absolute;
+}
+
+.xy-m {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.y-m {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.x-m {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.default-optin-tp img {
+    vertical-align: middle;
+    margin: 0 2px;
+    width: 18px;
+    display: inline-block;
+}
+
+
+
+.overlay-tp {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999999;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    overflow: hidden;
+}
+
+#jklm-bell,
+#jklm-box,
+#jklm-top_bar,
+.optins {
+    display: none
+}
+
+.mask-df-optin {
+    position: fixed !important;
+    background-color: #fff !important;
+    width: 230px;
+    top: 150px !important;
+    left: 0 !important;
+    text-align: left !important;
+    padding: 6px !important;
+    font-size: 14px !important;
+    font-family: "Nunito Sans", sans-serif !important;
+    z-index: 9999;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #e8e0e0 !important
+}
+
+.mask-df-optin span {
+    color: #4a90e2
+}
+
+.mask-df-optin .close {
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+    border: none !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+    background: 0 0 !important;
+    color: #000 !important;
+    padding: 0 5px !important;
+    margin: 0 !important
+}
+
+.jklm-if-top_bar {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    z-index: 9999;
+    height: 50px !important;
+    display: none;
+}
+
+@media screen and (max-width:575.98px) {
+    .jklm-if-top_bar {
+        height: 90px !important
+    }
+}
+
+.jklm-if-bell {
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+    border: none;
+    z-index: 9999;
+    width: 80px;
+    height: 80px;
+    display: none;
+}
+
+.jklm-if-box {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    z-index: 999999999 !important;
+    width: 400px;
+    min-height: 220px;
+    display: none;
+    /* position: relative; */
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.jklm-if-box html {
+    overflow: hidden !important
+}
+
+.jklm-if-box body {
+    margin: 0 !important
+}
+
+
+
+.jklm-if-default {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    display: none;
+    z-index: 9999
+}
+
+.optin-customization {
+    font-family: "Nunito Sans", sans-serif !important;
+    border: none !important
+}
+
+.optin-customization button {
+    height: 32px !important;
+    line-height: 32px !important
+}
+
+.optin-customization .form-row {
+    margin-bottom: 20px !important
+}
+
+.optin-customization .tp-input {
+    display: block !important;
+    height: 32px !important;
+    line-height: 32px !important;
+    border-radius: 2px !important;
+    border: 1px solid #d8d8d8;
+    padding-left: 10px !important;
+    width: 100% !important
+}
+
+.optin-customization .bell-circle {
+    background-color: red;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    position: fixed !important;
+    right: 20px !important;
+    bottom: 30px !important;
+    z-index: 9999 !important
+}
+
+.optin-customization .bell-color {
+    fill: #fff
+}
+
+.optin-customization .topbar {
+    padding: 10px !important;
+    min-height: 30px !important;
+    background-color: #dc3545;
+    text-align: center !important;
+    position: fixed !important;
+    left: 0;
+    width: 100% !important;
+    z-index: 9999 !important
+}
+
+.optin-customization .topbar button {
+    border-width: 0 !important;
+    padding: 0 14px
+}
+
+@media screen and (max-width:360px) {
+    .optin-customization .topbar span {
+        display: block
+    }
+}
+
+.optin-customization .custom-button {
+    height: 34px !important;
+    line-height: 34px !important;
+    border-width: 0 !important;
+    border-radius: 2px !important;
+    font-family: "Nunito Sans", sans-serif !important;
+    font-size: 14px !important;
+    margin-bottom: 20px !important
+}
+
+.optin-customization .optin-box {
+    width: 100%;
+    max-width: 360px;
+    z-index: 9999999999 !important;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    padding: 10px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    border: 1px solid #ececec;
+    height: max-content;
+}
+
+.optin-customization .optin-box .tpush-box .app-logo {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 60px;
+    flex: 0 0 60px;
+    margin-top: 10px;
+    margin-right: 10px
+}
+
+.optin-customization .optin-box .tpush-box .app-logo img {
+    width: 100%
+}
+
+.optin-customization .optin-box .tpush-box .main-text {
+    font-size: 16px !important;
+    color: #484c51 !important;
+    font-weight: 600 !important;
+    margin: 0 0 10px 0;
+}
+
+.optin-customization .optin-box .tpush-box .sub-text {
+    font-size: 12px !important;
+    color: #727f8e !important;
+    margin: 0 !important;
+    margin-bottom: 10px !important
+}
+
+.optin-customization .optin-box .tpush-box button {
+    border-radius: 2px !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    margin: 6px !important;
+    width: 100px !important;
+    padding: 0 !important;
+    cursor: pointer !important
+}
+
+.optin-customization .optin-box .tpush-box .not-now {
+    background: #f4f4f4 !important;
+    border: 1px solid #d9d9d9 !important;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1) !important;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1) !important;
+    color: #435570 !important;
+    margin-left: 0 !important
+}
+
+.optin-customization .optin-box .tpush-box .allow {
+    background: #4a90e2 !important;
+    border-width: 0 !important
+}
+
+.optin-customization .optin-box .poweredby {
+    margin: 5px 0 !important;
+    font-size: 12px !important;
+    opacity: .5 !important;
+    color: #000
+}
+
+.optin-customization .optin-box .poweredby a {
+    display: inline !important
+}
+
+
+.optin-customization .default-promo {
+    position: fixed !important;
+    top: 200px !important;
+    left: -45px !important;
+    -webkit-transform: rotate(-90deg) !important;
+    -ms-transform: rotate(-90deg) !important;
+    transform: rotate(-90deg) !important;
+    background-color: #e9595a !important;
+    padding: 23px 15px 10px 15px !important;
+    text-align: center !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    border-radius: 0 0 4px 4px !important;
+    z-index: 9999 !important;
+    -webkit-box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, .4) !important;
+    box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, .4) !important
+}
+
+.optin-customization .default-promo p {
+    color: #fff !important;
+    font-weight: 300 !important;
+    font-family: "Nunito Sans", sans-serif !important
+}
+
+.optin-customization .default-promo * {
+    margin: 0 !important;
+    padding: 0 !important
+}
+
+.optin-customization .default-promo a {
+    text-decoration: none !important;
+    color: #fff !important;
+    opacity: .6 !important
+}
+
+.optin-customization .default-promo button {
+    position: absolute !important;
+    right: 8px !important;
+    bottom: -8px !important;
+    font-size: 14px !important;
+    color: rgba(255, 255, 255, .5) !important;
+    opacity: .8 !important;
+    border: none !important;
+    background: no-repeat !important;
+    cursor: pointer !important;
+    outline: 0 !important
+}
+
+.jklm-if-box2 {
+    width: 400px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    z-index: 999999999 !important;
+    /* position: relative; */
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 200px;
+    display: none;
+}
+
+.optin-box2 {
+    width: 100%;
+    max-width: 360px !important;
+    padding: 10px !important;
+    font-family: 'Nunito Sans', sans-serif !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    color: #494949 !important;
+    /* -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2) !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2) !important; */
+    z-index: 9999999999;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    border: 1px solid #ececec;
+    height: max-content;
+    background: #fff !important;
+}
+
+.optin-box2 .header_truepush {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+    color: #484848 !important;
+}
+
+.optin-box2 .header_truepush p {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 14px !important;
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 !important;
+    flex: 1 !important
+}
+
+.optin-box2 .image {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 60px !important;
+    flex: 0 0 60px !important;
+    height: 60px !important;
+    margin-right: 20px !important
+}
+
+.optin-box2 .image img {
+    width: 100% !important
+}
+
+.optin-box2 .buttons {
+    margin: 12px 0 !important;
+    text-align: center;
+}
+
+.optin-box2 .buttons button {
+    font-size: 12px !important;
+    height: 36px !important;
+    line-height: 36px !important;
+    padding: 0 30px !important;
+    border-radius: 3px !important;
+    text-transform: uppercase !important
+}
+
+.optin-box2 .buttons .not-now {
+    background-color: transparent !important;
+    border: none !important;
+    color: #3b69ff !important;
+    font-weight: 500 !important;
+    border: none !important
+}
+
+.optin-box2 .buttons .allow {
+    background-color: #3b69ff !important;
+    color: #fff !important;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2) !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2) !important;
+    border: none !important
+}
+
+.optin-box2 .poweredby {
+    margin: 5px 0 !important;
+    font-size: 12px !important;
+    opacity: .5 !important;
+    text-align: center !important;
+    color: #000 !important;
+    display: block !important;
+}
+
+.optin-box2 .poweredby a {
+    text-align: center;
+}
+
+.default-push {
+    position: absolute;
+    right: 20px;
+    width: 340px;
+    padding: 20px 10px 4px 20px;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+    border-radius: 4px
+}
+
+.default-push .content-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.default-push .close {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    width: 20px !important;
+    height: 20px !important;
+    line-height: 14px !important;
+    border-radius: 50%
+}
+
+.default-push .close:hover {
+    background-color: #ccc;
+    opacity: .5
+}
+
+.default-push .logo {
+    margin-right: 10px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 48px;
+    flex: 0 0 48px
+}
+
+.default-push .content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.default-push h3 {
+    font-family: NunitoSans-SemiBold;
+    font-size: 18px;
+    color: #484c51;
+    letter-spacing: .5px;
+    margin-bottom: 6px
+}
+
+.default-push p {
+    font-size: 14px
+}
+
+.default-push .powered-by {
+    font-family: NunitoSans-SemiBold;
+    font-size: 12px;
+    color: #abb1b7;
+    letter-spacing: .32px;
+    display: inline-block;
+    margin-top: 10px
+}
+
+.top-class {
+    margin-top: 52px !important
+}
+
+.pointer {
+    cursor: pointer !important
+}
+
+/* =======Default+ Optin======== */
+
+.default-browser-optin {
+    width: 800px;
+    height: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999999999;
+}
+
+.default-optin-tp {
+    position: relative;
+    z-index: 99999999;
+}
+
+.default-optin-tp .default-box {
+    position: absolute;
+    top: 20px;
+    right: 150px;
+}
+
+
+.default-browser-optin:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-filter: blur(80px);
+    filter: blur(80px);
+    background-color: rgba(0, 0, 0, .3);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.default-optin-tp a {
+    color: #fff;
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif !important;
+    font-weight: 800;
+    text-decoration: none;
+    text-shadow: 2px 2px 8px #7c7c7c;
+}
+
+.default-optin-tp a:hover {
+    color: none !important;
+    text-decoration: underline;
+}
+
+.moz-default-optin {
+    width: 960px;
+}
+
+.moz-default-optin .default-box {
+    right: 60px;
+}
+
+.opera-default-optin .default-box {
+    right: 160px;
+}
+
+/* Internet Edge Browser Default Optiin CSs */
+.ie_edge_optin {
+    width: 100% !important;
+    height: 120px !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    top: auto;
+}
+
+.ie_edge_optin .default-box {
+    top: 22px !important;
+    left: 22% !important;
+}
+
+
+/* ========Opera Below 52 Version================= */
+.opera_lower_version {
+    width: 410px;
+    height: 220px;
+    right: 0;
+    left: auto !important;
+    z-index: 9999999999999999;
+}
+
+.opera_lower_version .default-box {
+    left: 0;
+    right: auto !important;
+
+}
+
+
+
+
+/* =======Default+ Optin======== */
+
+
+
+@media (max-width:429.98px) {
+
+    .jklm-if-box2 {
+        width: 90%;
+    }
+
+    .ie_edge_optin {
+        height: 140px !important;
+    }
+
+    .ie_edge_optin .default-box {
+        bottom: 20px;
+    }
+
+
+}
+
+.jklm-if-box #jklm-box {
+    position: static !important;
+    transform: none !important;
+}
+
+.iframe-optin-box {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width:575.98px) {
+    .moz-default-optin {
+        width: 100%;
+    }
+
+    .default-browser-optin {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: auto;
+        left: 0;
+        bottom: 0;
+    }
+
+    .default-optin-tp .default-box {
+        position: absolute;
+        top: auto;
+        left: 40%;
+        bottom: 20px;
+        transform: translateX(-40%);
+        right: auto;
+    }
+
+    .iframe-optin-box {
+        top: auto;
+        bottom: 0;
+    }
+
+    .optin-customization .optin-box,
+    .optin-customization .optin-box2 {
+        bottom: 0;
+        top: auto;
+    }
+
+    .jklm-if-box,
+    .jklm-if-box2 {
+        width: 360px;
+    }
+
+    .optin-iframe {
+        top: 0 !important;
+    }
+
+    .jklm-if-box,
+    .jklm-if-box2 {
+        top: auto;
+        bottom: 0;
+    }
+
+    .ie_edge_optin .default-box {
+        top: auto !important;
+        bottom: 0px;
+    }
+}
+
+@media (max-width:398.98px) {
+
+    .optin-customization .optin-box,
+    .optin-customization .optin-box2 {
+        width: 90%;
+        bottom: 0;
+        top: auto;
+    }
+
+    .optin-iframe {
+        top: auto !important;
+    }
+
+
+
+
+
+}
+
+@media (max-width:360px) {}
+
+
+
+
+/* ======Firefox Media Queries======= */
+@-moz-document url-prefix() {}
+
+/* ======IE Media Queries======= */
+@media screen and (-ms-high-contrast:active) {
+ 
+}
+
+
+/* ======Opera Media Queries======= */

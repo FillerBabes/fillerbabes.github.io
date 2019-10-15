@@ -1,0 +1,172 @@
+.home-two-cards{
+    padding-top: 20px;
+}
+div.onmobile, .onmobile{
+    display: none !important;
+}
+
+.home-two-cards .holi-card-left{
+    padding-right: 10px;
+}
+
+.home-two-cards .holi-card-right{
+    padding-left: 10px;
+}
+
+.container.card-container{
+    padding-bottom: 20px;
+}
+
+.newarrival.product-card-crausel .glyphicon{
+    top: 35px;
+}
+
+.newarrival.product-card-crausel .glyphicon-menu-left{
+    left: -50px;
+}
+
+.newarrival.product-card-crausel .glyphicon-menu-right{
+    right: -25px;
+}
+
+.container.category-cards{
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 18px;
+}
+
+.cat-card{
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cat-card-left{
+    padding: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.cat-card-right{
+    padding: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.category-cards{
+    background-color: #f2f2f2;
+}
+
+.container.category-cards{
+    padding-bottom: 45px;
+}
+.newarrival{
+    padding-bottom: 64px;
+}
+.newarrival .heading h3, .category-cards .heading h3{
+        font-size: 22px;
+    }
+
+.newarrival.product-card-crausel.shop-by-persona .glyphicon{
+        color: orange !important;
+}
+.shop-by-persona .persona-heading{
+    color: orange !important;
+}
+
+.shop-by-persona{
+    padding-bottom:0px;
+}
+
+@media(max-width:768px){
+    /*.newarrival.product-card-crausel #owl-home-persona .owl-item{
+        margin-right: 7px;
+    }*/
+    .newarrival .heading h3.persona-heading{
+        font-size: 18px;
+        text-transform: none;
+    }
+    .home-timer .countdowntimer.desctimer .smalltext{
+        font-weight: bold;
+    }
+    .home-timer .countdowntimer.desctimer #clockdiv div > span{
+        font-weight: bold;
+    }
+    .cat-card{
+        padding: 0px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .cat-card-left{
+        padding: 0px;
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+
+    .cat-card-right{
+        padding: 0px;
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+
+    .newarrival{
+        padding-bottom: 15px;
+    }
+    .newarrival .product-card-crausel .heading{
+        margin: 12px 0px;
+    }
+    .newarrival.product-card-crausel .glyphicon{
+        top: 38px;
+
+    }
+    .newarrival.product-card-crausel .next-slide .glyphicon{
+        right: -16px;
+
+    }
+    .newarrival.product-card-crausel .prev-slide .glyphicon{
+        left: -28px;
+
+    }
+
+    .newarrival.product-card-crausel .owl-carousel.light-pagination .owl-item{
+        margin-right: 0px;
+    }
+    .container.card-container{
+        padding: 8px !important;
+        padding-top: 18px !important;
+    }
+    .container.card-container.shop-by-category{
+        padding-top: 0px !important;
+    }
+    .newarrival.product-card-crausel.shop-by-persona .glyphicon{
+        color: orange !important;
+    }
+    .shop-by-persona .persona-heading{
+        color: orange !important;
+    }
+    .home-two-cards .holi-card-left{
+        padding-right: 5px;
+    }
+
+    .home-two-cards .holi-card-right{
+        padding-left: 5px;
+    }
+    .container.category-cards{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .category-cards .heading h3{
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .container.category-cards{
+        padding-bottom: 25px;
+        padding-top: 25px;
+        margin-top: 40px;
+    }
+    div.onmobile, .onmobile{
+        display: block;
+    }
+
+}
